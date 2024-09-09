@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<!-- Exibindo a codificação da pag para o navegador -->
+    <meta charset="UTF-8"> 
+	
+	<!--meta http-equiv='refresh' content='5'>  Atualização da Pag. de 5s em 5s para visualização das alterações -->
+	
+    <!-- Título da Página -->
+	<title>Músicas</title> <!-- Título da Página -->
+	
+	<link rel="shortcut icon" type="imagex/png" href="images/icon.ico">
+	
+	<!-- Css Externo -->
+    <link rel="stylesheet" href="css/style.css"> 
+	
+	<!-- Pacote de Ícones para o Site -->
+	<script src="https://kit.fontawesome.com/b590c4caf7.js" crossorigin="anonymous"></script> 
+	
+	<!-- Pacote de Css Via  bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> 
+	
+</head>
+<body>
+
+    <!-- Cabeçalho uma faixa preta desenhada no css -->
+    <header>
+		<i class="fa-solid fa-music"></i> 
+			<h1>Minha Lista de Músicas</h1>
+		<i class="fa-solid fa-music"></i> 
+    </header>
+	
+
+<main class="container">
+	<!-- Caixa de Pesquisa Junto com o Dropdown -->
+	<div class="pesquisa">
+				<input class="form-control mr-sm-2" type="search" placeholder="Pesquisar Artista ou Música..." aria-label="Pesquisar">
+          <select class="select" id="genero">
+            <option value="" disabled selected>Gênero</option>
+            <option value="">Todos</option>
+            <option value="pentecostal">Pentecostal</option>
+            <option value="rock">Rock cristão</option>
+            <option value="adoracao">Asdoração</option>
+            <option value="crista">Música cristã</option>
+            <option value="eletronica">Eletrônica gospel</option>
+          </select>
+
+    </div>  
+	
+	<!-- Título da lista Fixa -->
+	<div >
+		<ul>
+			<li>
+				<h3 style="font-size: 20px; display:inline;">Música - Nome do Artista</h3>
+				<h3 style="font-size: 20px; display:inline; position: absolute; left: 600px;">Gênero</h3>
+				<h3 style="font-size: 20px; display:inline; position: absolute; left: 900px;">Data de Lançamento</h3>
+			</li>
+		</ul>
+	</div>
+	
+	<!-- Lista de Músicas -->
+	<ul class="songs">
+      <li data-genero="pentecostal">
+          <p>Volte a Sonhar - Elaine Martins</p>
+          <p class="generomusica">Pentecostal</p>
+          <p class="lancamento">13 de fevereiro de 2020</p>
+      </li>
+
+
+      <li data-genero="rock">
+          <p>Leão - Fernandinho</p>
+          <p class="generomusica">Rock cristão</p>
+          <p class="lancamento">8 de janeiro de 2021</p>
+      </li>
+	  
+
+      <li data-genero="adoracao">
+          <p>Sobrevivi - Sarah Farias</p>
+          <p class="generomusica">Adoração</p>
+          <p class="lancamento">7 de maio de 2019</p>
+      </li>
+
+
+      <li data-genero="crista">
+          <p>Imensurável - Coral Kemuel</p>
+          <p class="generomusica">Música cristã</p>
+          <p class="lancamento">29 de outubro de 2021</p>
+      </li>
+
+
+      <li data-genero="eletronica">
+          <p>Ele Vem - Aline Barros</p>
+          <p class="generomusica">Eletrônica gospel</p>
+          <p class="lancamento">6 de novembro de 2020</p>
+      </li>
+      
+	  
+      <li data-genero="adoracao">
+          <p>Declararei - Gabriela Gomes</p>
+          <p class="generomusica">Adoração</p>
+          <p class="lancamento">16 de setembro de 2021</p>
+      </li>
+	  
+      
+      <li data-genero="eletronica">
+          <p>Deus Proverá - Gabriela Gomes</p>
+          <p class="generomusica">Eletrônica gospel</p>
+          <p class="lancamento">22 de outubro de 2020</p>
+      </li>
+      
+	  
+      <li data-genero="rock">
+          <p>Jesus - Priscilla Alcantara</p>
+          <p class="generomusica">Rock cristão</p>
+          <p class="lancamento">17 de abril de 2020</p>
+      </li>
+      
+	  
+      <li data-genero="pentecostal">
+          <p>Tua Alegria - DJ PV e Rebeca Carvalho</p>
+          <p class="generomusica">Pentecostal</p>
+          <p class="lancamento">5 de junho de 2020</p>
+      </li>
+      
+	  
+      <li data-genero="crista">
+          <p>Me Rendo - Ton Carfi</p>
+          <p class="generomusica">Música cristã</p>
+          <p class="lancamento">19 de fevereiro de 2020</p>
+      </li>
+
+
+    </ul>
+</main>
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; Site apenas para Desafio de Desenvolvedor Full Stack JavaScript</p>
+    </footer>
+
+</body>
+<script src="js/index.js"></script>
+
+</html>
